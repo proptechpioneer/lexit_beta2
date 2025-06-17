@@ -1,0 +1,152 @@
+@import "tailwindcss";
+
+@theme {
+  --color-deepblue: #05113A;
+  --color-gold: #ffd700;
+  --color-lightblue: #a2cadd;
+  --color-lightpurple: #e0bbff;
+  --color-bpurple:#D94590;
+  --color-midpurple: #a084ca;
+  --color-darkpurple: #5a189a;
+  --font-Archivo: 'Archivo', sans-serif;
+  --font-AnekTamil: 'Anek ', sans-serif;
+  --font-AnekTamilLight: 'Anek-Light', sans-serif;
+}
+
+@font-face {
+  font-family: 'Anek';
+  src: url('./fonts/AnekTamil-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Anek-Light';
+  src: url('./fonts/AnekTamil-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Archivo';
+  src: url('./fonts/ArchivoBlack-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Anek Tamil Custom', sans-serif;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+.property-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.button-card {
+  padding: 12px 24px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.1rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.07);
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 120px;
+  background-color: #f2f4f8;
+  color: #333;
+}
+
+/* Active (selected) State style */
+.property-button-selected {  
+  background-color: #D94590;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  box-shadow: none;
+  opacity: 0.85;
+  transition: box-shadow 0.3s ease; 
+}
+
+@media (min-width: 768px) {
+    .modal-content.assumptions-modal {
+        min-width: 500px;
+        max-width: 500px;
+        padding: 2.5rem 2.5rem 2.5rem 2.5rem;
+    }
+}
+
+@media (max-width: 320px) {
+  .modal-content.assumptions-modal {
+    min-width: 90%;      /* or 100% to ensure it fits the viewport */
+    max-width: 90%;      /* prevent exceeding viewport width */
+    padding: 0.5rem;     /* adjust padding as needed */
+    max-height: 90vh;    /* make modal shorter */
+    overflow-y: auto;    /* allow scrolling if content overflows */
+  }
+}
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex; /* Center using flexbox */
+  justify-content: center; /* Horizontal center */
+  align-items: center;     /* Vertical center */
+  z-index: 9999;           /* ensure it's on top */
+}
+
+/* Style for the overlay background to dismiss modal */
+.modal-underlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5); /* semi-transparent background */
+  border: none;
+}
+
+/* Style for modal content box */
+.modal-content {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  width: 90%; /* flexible width for small screens */
+  max-width: 300px; /* limit maximum width on large screens */
+  min-width: 200px; /* optional: keep it usable on very small screens */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  z-index: 10000; /* ensure it's above the overlay */
+}
+
+.auth-logo {
+  max-width: 100%; /* prevent the logo from exceeding container width */
+  height: auto;
+  display: block;
+  margin: 0 auto 20px auto;
+}
+
+@media (max-width: 600px) {
+  .auth-logo {
+    display: none;
+  }
+}
+
+.btn {
+  @apply w-64 text-2xl md:text-lg font-AnekTamil px-6 py-2 rounded-md shadow-md bg-gradient-to-r from-bpurple to-bpurple text-white transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-white;
+}
+
+.btn:hover {
+  @apply from-fuchsia-600 to-fuchsia-600;
+}
