@@ -402,7 +402,7 @@ export default function Stats() {
                 <p>OPEX Load refers to the ongoing operational expenses a landlord incurs to maintain a property, including service charges, management expenses, and maintenance costs. Effective management of OPEX Load is important for enhancing profitability and ensuring the sustainability of the investment.</p>
             </InfoModal>
             <InfoModal open={modal === "nrat"} onClose={() => setModal(null)} title="Net Return After Tax (NRAT)">
-                <p>Net Return After Tax (NRAT) is the income expected from your property over the next 10 years after accounting for taxes. It reflects post-tax income, which is crucial for evaluating returns. In England, property investment is taxed differently than other investments. Landlords can incur a loss on their investment and still have a tax liability.</p>
+                <p>Net Return After Tax (NRAT) is the income expected from your property after accounting for taxes. It reflects post-tax income, which is crucial for evaluating returns. In England, property investment is taxed differently than other investments. Landlords can incur a loss on their investment and still have a tax liability.</p>
             </InfoModal>
             <InfoModal
                 open={modal === "assumptions"}

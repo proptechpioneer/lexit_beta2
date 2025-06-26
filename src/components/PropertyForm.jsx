@@ -11,6 +11,7 @@ export default function PropertyForm(props) {
     const { isAuthenticated } = props
     
     // Modal state for income information    
+    const [showOtherModal, setShowOtherModal] = useState(false);
     const [showIncomeModal, setShowIncomeModal] = useState(false);
     const [showModal, setShowModal] = useState(false);
 
@@ -169,6 +170,46 @@ export default function PropertyForm(props) {
                             <p className="mb-4 text-red-500 font-semibold">If you do not enter your income the tax calculations will not work.</p>
                             <button
                                 onClick={() => setShowIncomeModal(false)}
+                                className="mt-4 px-6 py-2 bg-gradient-to-r from-bpurple to-fuchsia-600 text-white rounded-md shadow hover:from-fuchsia-600 hover:to-bpurple transition-colors duration-200 font-semibold focus:outline-none focus:ring-2 focus:ring-bpurple"
+                            >
+                                Close
+                            </button>
+                        </div>
+                    </div>
+                )}    
+
+                {/* Modal for other */}
+                {showOtherModal && (
+                    <div
+                        className="modal-overlay"
+                        style={{
+                            position: 'fixed',
+                            top: 0,
+                            left: 0,
+                            width: '100vw',
+                            height: '100vh',
+                            background: 'rgba(0,0,0,0.5)',
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            zIndex: 1000
+                        }}
+                    >
+                        <div
+                            className="modal-content bg-white p-4 md:p-8 rounded-xl text-center shadow-2xl border border-gray-200"
+                            style={{
+                                width: '100%',
+                                maxWidth: '400px',
+                                minWidth: '0',
+                                boxSizing: 'border-box'
+                            }}
+                        >
+                            <h3 className="text-xl font-bold mb-4 text-deepblue">Other Costs</h3>
+                            <p className="mb-2 text-gray-700">These are other costs associated with your Buy-to-Let, such as gas safetly and electrical certificates, insurances etc.</p>
+                            <p className="mb-2 text-gray-700">Please use the total annual cost.</p>
+                            <p className="mb-4 text-red-500 font-semibold">Do not include maintenance costs these are already accounted for in the assumptions.</p>
+                            <button
+                                onClick={() => setShowOtherModal(false)}
                                 className="mt-4 px-6 py-2 bg-gradient-to-r from-bpurple to-fuchsia-600 text-white rounded-md shadow hover:from-fuchsia-600 hover:to-bpurple transition-colors duration-200 font-semibold focus:outline-none focus:ring-2 focus:ring-bpurple"
                             >
                                 Close
@@ -444,7 +485,17 @@ export default function PropertyForm(props) {
 
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-2 w-full mb-6 items-stretch">
                             <div className="w-full h-full flex flex-col">
-                                <h6>Other Costs (£ p.a.)</h6>
+                                <h6>Other Costs (£ p.a.)
+                                <span> <i
+                                        className="fa-solid fa-circle-info"
+                                        style={{ cursor: 'pointer', marginLeft: '8px' }}
+                                        onClick={() => setShowOtherModal(true)}
+                                        aria-label="More info about annual income"
+                                        tabIndex={0}
+                                        role="button"   
+                                    ></i>
+                                </span>
+                                </h6>
                                 <input
                                     value={otherCosts}
                                     onChange={(e) => setOtherCosts(e.target.value)}

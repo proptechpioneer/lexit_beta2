@@ -163,7 +163,7 @@ function LandingPage() {
         <div>
           <img src="/results.png" alt="LEXIT Results Page" className="w-full max-w-[650px] mx-auto " />
         </div>
-        <h2 className=" font-Archivo text-center bg-deepblue text-white text-3xl font-bold mb-1">What LEXIT Does?i</h2>
+        <h2 className=" font-Archivo text-center bg-deepblue text-white text-3xl font-bold mb-1">What LEXIT Does?</h2>
         <br />
         <p className="max-w-[800px] mx-auto text-white font-AnekTamil text-center">
           The LEXIT plaftorm provides a detailed dashboard setting out all of the key information BtL landlords need to determine if their property investment is performing and worth retaining.
@@ -256,89 +256,140 @@ function LandingPage() {
 
         {/* Top Row - 3 separate cards */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-6">
-  <div className="bg-[#D9B8DE] rounded-lg flex flex-col items-start p-4 shadow h-full w-[90vw] mx-auto lg:w-auto">
-    <div className="flex items-center mb-2">
-      <img
-        src="/naomi.png"
-        alt="Photo 1"
-        className="w-14 h-14 object-cover rounded-full mr-3"
-      />
-      <div>
-        <h3 className="text-lg text-deepblue">Naomi</h3>
-        <h3 className="font-bold text-lg text-deepblue">BtL Investor</h3>
+        <div className="bg-[#D9B8DE] rounded-lg flex flex-col items-start p-4 shadow h-full w-[90vw] mx-auto lg:w-auto">
+          <div className="flex items-center mb-2">
+            <img
+              src="/Paulo_the_finance_guy.png"
+              alt="Paulo the Finance Guy"
+              className="w-14 h-14 object-cover rounded-full mr-3"
+            />
+            <div>
+              <a 
+                href="https://x.com/PauloNoggy" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                <h3 className="text-lg text-deepblue">Paulo Nogueira</h3>
+                <h3 className="font-bold text-lg text-deepblue">The Finance Guy</h3>
+              </a>
+            </div>
+          </div>
+          <a 
+            href="https://x.com/PauloNoggy" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-deepblue text-sm hover:underline"
+          >
+          I used the LEXIT platform, it gave me in seconds what took me a huge amount of time, doing research and building spreadsheets. Very useful
+          </a>
+        </div>
+        <div className="bg-[#D9B8DE] rounded-lg flex flex-col items-start p-4 shadow h-full w-[90vw] mx-auto lg:w-auto">
+          <div className="flex items-center mb-2">
+            <img
+              src="/Jaime.png"
+              alt="Photo 2"
+              className="w-14 h-14 object-cover rounded-full mr-3"
+            />
+            <a href="https://www.linkedin.com/in/jaimemorenom/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="hover:underline">
+              <h3 className="text-lg text-deepblue">Jaime Moreno</h3>
+              <h3 className="font-bold text-lg text-deepblue">Founder | Acacias Capital </h3>
+            </a>
+          </div>
+          <a 
+            href="https://www.linkedin.com/in/jaimemorenom/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-deepblue text-sm hover:underline"
+          >
+            I have used the app to review various BtL investments and it is a very useful tool to quickly assess the performance of a property. This is a fantastic app which I would recommend to anyone with a Buy-to-Let.
+          </a>
+        </div>
+        <div className="bg-[#D9B8DE] rounded-lg flex flex-col items-start p-4 shadow h-full w-[90vw] mx-auto lg:w-auto">
+          <div className="flex items-center mb-2">
+            <img
+              src="/becca.png"
+              alt="Photo 3"
+              className="w-14 h-14 object-cover rounded-full mr-3"
+            />
+            <a
+              href="https://rebeccaharrisinteriors.com/interior-design/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="hover:underline">
+              <h3 className="text-lg text-deepblue">Rebecca Harris</h3>
+              <h3 className="font-bold text-lg text-deepblue">Interior Designer </h3>
+            </a>
+          </div>
+          <a 
+              href="https://rebeccaharrisinteriors.com/interior-design/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-deepblue text-sm hover:underline"
+              >
+            I work with BtL invetors from all over the world and I am constantly asked questions about how to improve tenant experiences. This is the first analyser I have seen which is simple to use and provides such a clear analysis.
+          </a>
+        </div>
       </div>
-    </div>
-    <p className="text-deepblue text-sm">
-      Before LEXIT, I wasn't sure if keeping my Buy-to-Let was the right move or if selling made more sense. LEXIT showed me how I could potentially pay off my mortgage and guided me to a confident, informed decision.
-    </p>
-  </div>
-  <div className="bg-[#D9B8DE] rounded-lg flex flex-col items-start p-4 shadow h-full w-[90vw] mx-auto lg:w-auto">
-    <div className="flex items-center mb-2">
-      <img
-        src="/mary.png"
-        alt="Photo 2"
-        className="w-14 h-14 object-cover rounded-full mr-3"
-      />
-      <div>
-        <h3 className="text-lg text-deepblue">Mary</h3>
-        <h3 className="font-bold text-lg text-deepblue">Accidental Landlord</h3>
-      </div>
-    </div>
-    <p className="text-deepblue text-sm">
-      When I got married my partner and I ended up with two properties, we decided to rent my flat out. LEXIT helped me work out there was no real benefit to hold on to my property and there were better things to do with the money.
-    </p>
-  </div>
-  <div className="bg-[#D9B8DE] rounded-lg flex flex-col items-start p-4 shadow h-full w-[90vw] mx-auto lg:w-auto">
-    <div className="flex items-center mb-2">
-      <img
-        src="/michael.png"
-        alt="Photo 3"
-        className="w-14 h-14 object-cover rounded-full mr-3"
-      />
-      <div>
-        <h3 className="text-lg text-deepblue">Michael</h3>
-        <h3 className="font-bold text-lg text-deepblue">Investor</h3>
-      </div>
-    </div>
-    <p className="text-deepblue text-sm">
-      I bought a buy-to-let because it was simply what people like me did. LEXIT helped me see that property doesn’t always go up in value and that unless I took action my buy-to-let would quickly become a liabiilty rather than an asset.
-    </p>
-  </div>
-</div>
 
    {/* Bottom Row - 2 separate cards */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           <div className="bg-[#D9B8DE] rounded-lg flex flex-col items-start p-4 shadow h-full w-[90vw] mx-auto lg:w-auto">
             <div className="flex items-center mb-2">
               <img
-                src="/john.png"
-                alt="Photo 4"
+                src="/alex_groundwater.png"
+                alt="Photo Alex Groundwater Housing Stig"
                 className="w-14 h-14 object-cover rounded-full mr-3"
               />
               <div>
-                <h3 className="text-lg text-deepblue">John Smith</h3>
-                <h3 className="font-bold text-lg text-deepblue">Mortgage Broker | Worlds Best Mortgages</h3>
+                <a 
+                  href="https://x.com/alexgroundwater" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:underline"
+                >
+                  <h3 className="text-lg text-deepblue">Alex Groundwater</h3>
+                  <h3 className="font-bold text-lg text-deepblue">"The Housing Stig"</h3>
+                </a>
               </div>
             </div>
-            <p className="text-deepblue text-sm">
-              We have many clients who are now under water on their buy-to-lets until now it has been very difficult for them to determine whether or not they should sell or keep them. The LEXIT application is the easiest way for them to go through this thinking.
-            </p>
+            <a 
+              href="https://x.com/alexgroundwater" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-deepblue text-sm hover:underline"
+            >
+           I've spent some time using the new LEXIT, Buy-to-Let Investor app, testing the model assumptions and outputs and it's an extremely comprehensive and easy to use tool that anyone thinking of becoming a landlord, or evaluating their current portfolio, should try. The realities of the current environment where you can charge £36K a year rent, on a £700K+ property, yet only walk away with £5K after tax profit were pretty eye opening... and the downside risk...
+            </a>
           </div>
           <div className="bg-[#D9B8DE] rounded-lg flex flex-col items-start p-4 shadow h-full w-[90vw] mx-auto lg:w-auto">
             <div className="flex items-center mb-2">
               <img
-                src="/jill.png"
+                src="/mortgage_mike.png"
                 alt="Photo 5"
                 className="w-14 h-14 object-cover rounded-full mr-3"
               />
-              <div>
-                <h3 className="text-lg text-deepblue">Jill Green</h3>
-                <h3 className="font-bold text-lg text-deepblue">Property Manager | Chase Evans</h3>
-              </div>
+              <a
+                href="https://x.com/MortgageMikeN2" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-deepblue text-sm hover:underline"
+                >
+                <h3 className="text-lg text-deepblue">Mike Lawlor</h3>
+                <h3 className="font-bold text-lg text-deepblue">Business Principal and Mortgage Adviser</h3>
+              </a>
             </div>
-            <p className="text-deepblue text-sm">
-              We are now recommending the LEXIT application to all of our landlords. It is the best application we have seen to quickly give landlords and instant snapshot into their property, to find ways to improve their financial perfomance.
-            </p>
+            <a href="https://x.com/MortgageMikeN2" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-deepblue text-sm hover:underline">
+            LEXIT is a fantastic buy-to-let analyser that offers quick, accurate insights for property investments.
+            As a mortgage broker, I appreciate its user-friendly interface and comprehensive data, which helps clients make smarter decisions. It’s a valuable tool for streamlining the buy-to-let process and enhancing service delivery.
+            Definitely worth trying for anyone with a Buy-to-Let.
+            </a>
           </div>
         </div>
 

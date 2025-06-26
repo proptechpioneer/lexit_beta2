@@ -48,8 +48,10 @@ export default function Layout (props) {
                     <p>© 2025 LEXIT. All Rights Reserved.</p>
                 </div>
                 <div className="flex items-center gap-2">
-                    <i className="fa-brands fa-linkedin text-2xl"></i>
-                    <i className="fa-brands fa-square-x-twitter text-2xl"></i>
+                    {/* <i className="fa-brands fa-linkedin text-2xl"></i> */}
+                    <a href="https://x.com/LEXIT_Tech" target="_blank" rel="noopener noreferrer">
+                        <i className="fa-brands fa-square-x-twitter text-2xl hover:text-blue-400 transition-colors"></i>
+                    </a>
                 </div>
                 <div className="flex items-center gap-2">
                     <button
