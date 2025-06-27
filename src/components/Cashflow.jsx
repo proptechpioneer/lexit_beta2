@@ -241,11 +241,11 @@ export default function Cashflow() {
                     <img src="target.png" alt="Risk" className="w-6 h-6 mr-2" />
                     <b className="text-red-600" >Risk Considerations</b>
                     </div>
-                    <p className="text-red-600">Vacancy rate assumed of 3.85% p.a.</p>
+                    <p className="text-red-600">Vacancy rate assumed of 3.85% p.a. (ie. 2 weeks rent)</p>
                     <p className="text-red-600" >Repairs and management assumed at 3.50% p.a.</p>
                     <p className="text-red-600">Costs are increase in-line with assumed inflation of 2.80% p.a.</p>
-                    <p className="text-red-600">Rent is increased annually at 3.71% p.a.</p>
-                    <p className="text-red-600">Property is assumed to grow annually at 3.40% p.a.</p>
+                    <p className="text-red-600">Rent is increased annually at 3.71% p.a. (England's average)</p>
+                    <p className="text-red-600">Property is assumed to grow annually at 3.40% p.a. (England's average)</p>
                     <p className="text-red-600">Taxes are based on UK income tax rates as at 1 June 2025 (no allowances made for NI or any other allowances).</p>
                     </div>
 

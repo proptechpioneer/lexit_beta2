@@ -396,13 +396,13 @@ export default function Stats() {
                 </p>
             </InfoModal>
             <InfoModal open={modal === "dscr"} onClose={() => setModal(null)} title="Debt Service Coverage Ratio (DSCR)">
-                <p>The debt service coverage ratio (DSCR) measures a landlord's ability to generate enough cash to cover mortgage obligations. A DSCR of 1.00 means the operating income matches the debt service costs exactly. Less than 1.00 indicates the landlord cannot cover the mortgage without additional capital. For instance, a DSCR of 0.95 covers only 95% of annual debt payments.</p>
+                <p>The debt service coverage ratio (DSCR) measures a landlord's ability to generate enough cash to cover their mortgage obligations. A DSCR of 1.00 means the operating income matches the debt service costs exactly. Less than 1.00 indicates the landlord cannot cover the mortgage without additional capital. For instance, a DSCR of 0.95 covers only 95% of annual debt payments.</p>
             </InfoModal>
             <InfoModal open={modal === "opexLoad"} onClose={() => setModal(null)} title="OPEX Load">
-                <p>OPEX Load refers to the ongoing operational expenses a landlord incurs to maintain a property, including service charges, management expenses, and maintenance costs. Effective management of OPEX Load is important for enhancing profitability and ensuring the sustainability of the investment.</p>
+                <p>OPEX Load refers to the ongoing operational expenses a landlord incurs to operate a property. It includes costs such as service charges, management expenses, and maintenance costs, etc. Effective management of OPEX Load is important for enhancing profitability and ensuring the sustainability of the investment.</p>
             </InfoModal>
             <InfoModal open={modal === "nrat"} onClose={() => setModal(null)} title="Net Return After Tax (NRAT)">
-                <p>Net Return After Tax (NRAT) is the income expected from your property after accounting for taxes. It reflects post-tax income, which is crucial for evaluating returns. In England, property investment is taxed differently than other investments. Landlords can incur a loss on their investment and still have a tax liability.</p>
+                <p>Net Return After Tax (NRAT) is the income expected from your property after accounting for taxes. Analysing a properties post-tax income is crucial for evaluating the likely return. In England, property investment is taxed differently than other investments. Landlords can incur a loss on their investment and still have a tax liability.</p>
             </InfoModal>
             <InfoModal
                 open={modal === "assumptions"}

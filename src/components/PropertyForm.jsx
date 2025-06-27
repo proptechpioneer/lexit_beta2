@@ -205,7 +205,7 @@ export default function PropertyForm(props) {
                             }}
                         >
                             <h3 className="text-xl font-bold mb-4 text-deepblue">Other Costs</h3>
-                            <p className="mb-2 text-gray-700">These are other costs associated with your Buy-to-Let, such as gas safetly and electrical certificates, insurances etc.</p>
+                            <p className="mb-2 text-gray-700">These are other costs associated with your Buy-to-Let, such as gas & electrical safety certificates, insurances, landlord registration schemes, gardening, etc.</p>
                             <p className="mb-2 text-gray-700">Please use the total annual cost.</p>
                             <p className="mb-4 text-red-500 font-semibold">Do not include maintenance costs these are already accounted for in the assumptions.</p>
                             <button
